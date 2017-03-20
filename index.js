@@ -20,7 +20,6 @@ app.setPath('userData', tmpdir)
 app.commandLine.appendSwitch('log-net-log', './net.log.json')
 
 app.on('quit', () => {
-  console.log(JSON.parse(fs.readFileSync('./net.log.json').toString()))
   fs.removeSync(tmpdir)
 })
 
