@@ -2,3 +2,5 @@ test/
 .npmignore
 .travis.yml
 appveyor.yml
+.idea
+net.log.json
